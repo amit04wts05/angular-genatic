@@ -1,0 +1,13 @@
+<div class="hero-banner">
+    <div class="hero-banner-slideshow">
+      <div class="slide text-center" *ngFor="let bannerdata of banner">
+        <div class="container">
+          <h2>{{bannerdata.title}}</h2>
+          <p>{{bannerdata.description}}</p>
+          <a href="javascript:void(0)" class="c-btn btn-lg btn-blue">Experience it</a>
+        </div>
+        <img src="{{bannerdata.image}}" class="girl-img" align=""/>
+      </div>
+    </div>
+    <div class="gradiant-bg" style="background-image: url(./assets/images/hero-gradiant-bg.png);"></div>
+  </div>

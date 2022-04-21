@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-product-tile',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductTileComponent implements OnInit {
 
+  @Input() product:any; 
   constructor() { }
 
   ngOnInit(): void {
