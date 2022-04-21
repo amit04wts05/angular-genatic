@@ -44,9 +44,25 @@ export class HomeComponent implements OnInit {
  {
    title:"Fitted Cap",
    description:"This classic stretch-fitted cap features a three-layer sweatband with patented Stain-Block technology to.",
-   price:"$38.00",
    image:"./assets/images/cap.png"
  },
+]
+
+categories=[{
+  name:"APPAREL",
+  description:"Suites your style anytime and everytime.",
+  image:"./assets/images/black-tshirt.png"
+},
+{
+ name:"headwear",
+ description:"Always be on top with your cool wearables.",
+ image:"./assets/images/black-cap.png"
+},
+{
+ name:"Merchandise",
+ description:"Style your living with our products",
+ image:"./assets/images/cap.png"
+},
 ]
   constructor() { }
 

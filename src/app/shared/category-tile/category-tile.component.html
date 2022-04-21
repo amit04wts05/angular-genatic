@@ -1,0 +1,16 @@
+<!-- Three Column Section -->
+<div class="three-column-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 category-box text-center" *ngFor="let categoryData of category">
+          <h4>{{categoryData.name}}</h4>
+          <h3>{{categoryData.description}}</h3>
+          <a href="javascript:void(0)" class="c-btn btn-border btn-xsm">Discover More</a>
+          <div class="image-container">
+            <img src="{{categoryData.image}}" alt="Apparel">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Three Column Section End-->
