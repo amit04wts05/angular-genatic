@@ -1,4 +1,12 @@
-<product-carousel [banner]="bannerData"></product-carousel>
+<div class="hero-banner">
+  <div class="hero-banner-slideshow">
+    <div class="slide text-center" *ngFor="let bannerdata of banners">
+      <product-carousel [banner]="bannerdata"></product-carousel>
+    </div>
+  </div>
+  <div class="gradiant-bg" style="background-image: url(./assets/images/hero-gradiant-bg.png);"></div>
+</div>
+
 <div class="product-section">
   <div class="container">
     <div class="row">
@@ -33,8 +41,8 @@
 <!-- Three Column Section End-->
 
 <new-launch></new-launch>
- <!-- Vehicle Accessories -->
- <div class="vehicle-accessories">
+<!-- Vehicle Accessories -->
+<div class="vehicle-accessories">
   <div class="vehicle-accessories-banner text-center">
     <div class="content">
       <h4>Vehicle Accessories</h4>

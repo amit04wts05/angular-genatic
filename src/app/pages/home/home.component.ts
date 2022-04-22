@@ -6,11 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-   bannerData=[{
+  banners=[{
     title:"We believe in Lucid living",
     description:"Experience the new way of living.",
     image:"./assets/images/hero-banner-girl.png"
-   }]
+   },
+   {
+    title:"We believe in Lucid living",
+    description:"Experience the new way of living.",
+    image:"./assets/images/hero-banner-girl.png"
+   },
+   
+  ]
+  
    products=[{
      title:"Fitted Cap",
      description:"This classic stretch-fitted cap features a three-layer sweatband with patented Stain-Block technology to.",
