@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-category-tile',
+  selector: 'category-tile',
   templateUrl: './category-tile.component.html',
   styleUrls: ['./category-tile.component.scss']
 })

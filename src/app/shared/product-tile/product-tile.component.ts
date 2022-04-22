@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-product-tile',
+  selector: 'product-tile',
   templateUrl: './product-tile.component.html',
   styleUrls: ['./product-tile.component.scss']
 })

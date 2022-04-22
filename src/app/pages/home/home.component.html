@@ -1,17 +1,48 @@
-<app-product-carousel [banner]="bannerData"></app-product-carousel>
+<product-carousel [banner]="bannerData"></product-carousel>
 <div class="product-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">People love it. Unparalled choices.</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">People love it. Unparalled choices.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="products-tiles">
+          <div class="row">
+            <div class="col-xl-4 col-sm-6" *ngFor="let productData of products">
+              <product-tile [product]="productData"></product-tile>
+            </div>
+
+          </div>
         </div>
       </div>
-     <app-product-tile [product]="products" ></app-product-tile>
-
     </div>
+  </div>
 </div>
+<!-- Three Column Section -->
+<div class="three-column-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 category-box text-center" *ngFor="let categoryData of categories">
+        <category-tile [category]="categoryData"></category-tile>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Three Column Section End-->
 
-<app-category-tile [category]="categories" ></app-category-tile>
-
-<app-new-launch></app-new-launch>
-<app-studio></app-studio>
+<new-launch></new-launch>
+ <!-- Vehicle Accessories -->
+ <div class="vehicle-accessories">
+  <div class="vehicle-accessories-banner text-center">
+    <div class="content">
+      <h4>Vehicle Accessories</h4>
+      <h2>Find the accessories you’re looking for.</h2>
+      <a href="javascript:void(0)" class="c-btn btn-border btn-xsm">Discover More</a>
+    </div>
+    <img src="./assets/images/vehicle-car.png" alt="">
+  </div>
+</div>
+<!-- Vehicle Accessories End -->
+<studio></studio>

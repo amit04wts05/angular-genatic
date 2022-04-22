@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-new-launch',
+  selector: 'new-launch',
   templateUrl: './new-launch.component.html',
   styleUrls: ['./new-launch.component.scss']
 })
