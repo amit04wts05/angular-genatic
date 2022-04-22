@@ -42,9 +42,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "src/assets/js/bootstrap.js",
-              "src/assets/js/slick.min.js",
-              "src/assets/js/jquery.slicknav.min.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              "src/assets/js/slick.min.js"
             ]
           },
           "configurations": {

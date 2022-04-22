@@ -1,6 +1,7 @@
 // Homepage Hero Slider
-$(document).ready(function(){ // Homepage hero slider
-	$('app-product-tile .hero-banner .hero-banner-slideshow').slick({
+$(document).ready(function(){
+  // Homepage hero slider
+	$('.hero-banner-slideshow').slick({
 	  dots: true,
 	  infinite: true,
 	  speed: 500,

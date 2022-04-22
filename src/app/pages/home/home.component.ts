@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -72,10 +73,13 @@ categories=[{
  image:"./assets/images/cap.png"
 },
 ]
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+   gotoProductPage(){
+    this.router.navigate(['/productdetail']);
+   }
 
 }

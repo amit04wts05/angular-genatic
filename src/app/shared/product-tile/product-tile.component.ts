@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
 @Component({
   selector: 'product-tile',
   templateUrl: './product-tile.component.html',
@@ -8,9 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProductTileComponent implements OnInit {
 
   @Input() product:any; 
+  @Output() productPage:EventEmitter<string>= new EventEmitter();  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  goToProductDetailPage(){
+  this.productPage.emit();
   }
 
 }

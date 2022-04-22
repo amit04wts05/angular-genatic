@@ -5,6 +5,7 @@ import { ProductDetailRoutingModule } from './product-detail-routing.module';
 import { ProductDetailComponent } from './product-detail.component';
 import { MainLayoutModule } from 'src/app/layouts/main/main.module';
 
+import { SharedModule } from "src/app/shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { MainLayoutModule } from 'src/app/layouts/main/main.module';
   imports: [
     CommonModule,
     MainLayoutModule,
+    SharedModule,
     ProductDetailRoutingModule
-  ]
+  ],
+  exports:[SharedModule]
 })
 export class ProductDetailModule { }
